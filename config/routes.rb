@@ -1,5 +1,17 @@
 # config/routes.rb
 Rails.application.routes.draw do
-  # route to test your configuration
-  get '/hello', to: 'application#hello_world'
+  resources :favorites
+  resources :planets
+  resources :users
+
+  # get '/hello', to: 'application#hello_world'
+
+  get '/me', to: "users#show"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+  post "/signup", to: "users#create"
+
+  get '*path',
+      to: 'fallback#index',
+      constraints: ->(req) { !req.xhr? && req.format.html? }
 end
