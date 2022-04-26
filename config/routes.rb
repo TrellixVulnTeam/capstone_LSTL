@@ -1,6 +1,6 @@
 # config/routes.rb
 Rails.application.routes.draw do
-  resources :favorites
+  resources :notes
   resources :planets
   resources :users
 

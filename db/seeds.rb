@@ -1,4 +1,4 @@
-Favorite.destroy_all
+Note.destroy_all
 User.destroy_all
 Planet.destroy_all
 
@@ -15,6 +15,6 @@ planet6 = Planet.create(name: "Saturn", about: "Saturn is the sixth planet from 
 planet7 = Planet.create(name: "Uranus", about: "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.", image: "https://solarsystem.nasa.gov/system/stellar_items/list_view_images/69_uranus_480x320.jpg")
 planet8 = Planet.create(name: "Neptune", about: "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.", image: "https://solarsystem.nasa.gov/system/stellar_items/list_view_images/90_neptune_480x320.jpg")
 
-favorite1 = Favorite.create(user_id: demo.id, planet_id: planet1.id)
+note1 = Note.create(memo: "Hello", user_id: demo.id, planet_id: planet1.id)
 
 puts "done seeding"

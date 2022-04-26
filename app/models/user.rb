@@ -1,7 +1,7 @@
 class User < ApplicationRecord
     has_secure_password
-    has_many :favorites
-    has_many :planets, through: :favorites
+    has_many :notes
+    has_many :planets, through: :notes
 
     validates :username, presence: true, uniqueness: true
     validates :password, length: {minimum: 3}

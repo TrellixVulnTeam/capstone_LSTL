@@ -10,18 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_25_161548) do
+ActiveRecord::Schema.define(version: 2022_04_26_141738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "favorites", force: :cascade do |t|
+  create_table "notes", force: :cascade do |t|
+    t.text "memo"
     t.bigint "user_id", null: false
     t.bigint "planet_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["planet_id"], name: "index_favorites_on_planet_id"
-    t.index ["user_id"], name: "index_favorites_on_user_id"
+    t.index ["planet_id"], name: "index_notes_on_planet_id"
+    t.index ["user_id"], name: "index_notes_on_user_id"
   end
 
   create_table "planets", force: :cascade do |t|
@@ -39,6 +40,6 @@ ActiveRecord::Schema.define(version: 2022_04_25_161548) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "favorites", "planets"
-  add_foreign_key "favorites", "users"
+  add_foreign_key "notes", "planets"
+  add_foreign_key "notes", "users"
 end

@@ -1,3 +1,3 @@
 class PlanetSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :about, :image
 end
