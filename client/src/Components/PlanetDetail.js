@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
+import MemoForm from './MemoForm';
 
 function PlanetDetail() {
 
@@ -20,6 +21,7 @@ function PlanetDetail() {
         <h1>{name}</h1>
         <img src={image}/>
         <h3>{about}</h3>
+        <MemoForm />
     </div>
   )
 }
