@@ -20,13 +20,15 @@ function App() {
         }
       });
   }, [])
-
+  console.log(user)
 
   return (
-    <BrowserRouter>
+  
+    <Switch>
+      <>
+    <div className="App">
       <Navbar />
-      <div className="App">
-        <Switch>
+      
           <Route exact path="/">
             <Home />
           </Route>
@@ -41,12 +43,13 @@ function App() {
             />
           </Route>
           <Route exact path="/planets/:id">
-            <PlanetDetail />
+            <PlanetDetail user={user} />
           </Route>
-
-        </Switch>
       </div>
-    </BrowserRouter>
+      </>
+      </Switch>
+   
+
   );
 }
 

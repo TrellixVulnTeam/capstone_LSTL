@@ -21,6 +21,6 @@ class NotesController < ApplicationController
     end
     private
     def note_params
-        params.permit(:memo, :note)
+        params.permit(:memo, :user_id, :planet_id)
     end
 end

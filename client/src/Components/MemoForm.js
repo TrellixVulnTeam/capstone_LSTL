@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react"
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
 
 
 
-function MemoForm() {
+function MemoForm({user, planet}) {
     const [comment, setComment] = useState("")
 
 
     function handleSubmit(e) {
-        e.preventDefault();
         axios.post(`/notes`, {
+            user_id: user.id,
+            planet_id: planet.id,
             memo: comment
         })
 
@@ -22,6 +22,8 @@ function MemoForm() {
     }
 
 
+
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -29,8 +31,6 @@ function MemoForm() {
                     <input type="text" value={comment} onChange={handleOnChange}></input>
                 </label>
                 <button type="submit">Post</button>
-
-
             </form>
         </div>
 
