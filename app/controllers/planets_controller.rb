@@ -14,6 +14,6 @@ class PlanetsController < ApplicationController
     private
 
     def find_planet
-        planet.find(params[:id])
+        Planet.find(params[:id])
     end
 end

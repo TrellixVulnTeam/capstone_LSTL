@@ -1,48 +1,41 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import axios from 'axios'
+import PlanetCard from './PlanetCard';
+
 
 
 
 function Home() {
 
-    const [ planets, setPlanets ]= useState([]);
+    const [planets, setPlanets] = useState([]);
 
-    // const fetchData = async () => {
-    //     try {
-    //       const resp = await axios.get('/planets');
-    //       setPlanets(resp.data);
-    //     } catch(err) {
-    //       console.error(err.response)
-    //     }
-    //   }
-    
-    //   useEffect(() => {
-    //     fetchData();
-    //   }, []);
 
-    //   console.log(planets)
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetch('/planets');
+            const json = await data.json();
 
-   useEffect(() => {
-       const fetchData = async () => {
-           const data = await fetch('/planets');
-           const json = await data.json();
-
-           setPlanets(json);
-       }
-       fetchData()
-       .catch(console.error)
-   }, [])
+            setPlanets(json);
+        }
+        fetchData()
+            .catch(console.error)
+    }, [])
 
     console.log(planets)
 
 
-
-
-  return (
-    <div>
-      <img src={planets[0].image} />
-    </div>
-  )
+    return (
+        <div className="planet-container">
+            {planets.map((planet) => (
+                <PlanetCard 
+                key={planet.id}
+                id={planet.id}
+                planet={planet}
+                />
+            ))}
+        </div>
+    )
 }
 
 export default Home
