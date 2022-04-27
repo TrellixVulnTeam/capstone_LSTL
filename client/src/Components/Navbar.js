@@ -5,13 +5,17 @@ import Login from './Login/Login'
 
 function Navbar() {
   return (
-    <div>
+    <div className='navbar'>
         <Link to="/login">
             <span>Login</span>
         </Link>
+        
         <Link to="/">
+        <div className="navbar-title">
         <h1>Space</h1>
+        </div>
         </Link>
+        
     </div>
   )
 }

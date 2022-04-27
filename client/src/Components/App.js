@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "./Login/Login";
 import Signup from "./SignUp";
 import Home from "./Home";
+
 import './App.css';
 import Navbar from "./Navbar";
 import PlanetDetail from "./PlanetDetail";
@@ -26,7 +27,7 @@ function App() {
   
     <Switch>
       <>
-    <div className="App">
+    
       <Navbar />
       
           <Route exact path="/">
@@ -45,7 +46,7 @@ function App() {
           <Route exact path="/planets/:id">
             <PlanetDetail user={user} />
           </Route>
-      </div>
+     
       </>
       </Switch>
    
