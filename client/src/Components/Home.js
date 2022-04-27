@@ -27,7 +27,11 @@ function Home() {
 
 
     return (
-        <div className='background'>
+        <div className='home-background'>
+          
+                <img className='sun' src="https://www.sciencenewsforstudents.org/wp-content/uploads/2020/06/1030_LL_the_sun-1028x579.jpg"/>
+           
+               
         <div className="planet-container">
             {planets.map((planet) => (
                 <PlanetCard 
@@ -36,6 +40,7 @@ function Home() {
                 planet={planet}
                 />
             ))}
+       
         </div>
         </div>
     )

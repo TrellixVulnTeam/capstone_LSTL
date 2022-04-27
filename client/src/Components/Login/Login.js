@@ -27,6 +27,7 @@ function Login({ setUser, passwordConfirmation, setPasswordConfirmation }) {
             }
         })
     }
+    console.log(username)
     return (
         <div className="sign-container">
         <div className='signin'>

@@ -40,7 +40,7 @@ function PlanetDetail({ user }) {
   return (
     <div className='background'>
       <h1>{name}</h1>
-      <img src={image} />
+      <img src={image} class="center"/>
       <h3>{about}</h3>
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {

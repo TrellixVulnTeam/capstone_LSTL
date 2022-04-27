@@ -1,12 +1,21 @@
 .planet-container {
   display: flex;
   width: 60%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  
+  max-width: 400px;
   margin: 0 auto;
+  padding: 10px 0;
+  
 }
 
 .planet-container img {
   object-fit: contain;
   max-width: 10rem;
+  max-width: 100%;
+  height: auto;
+  
 }
+
+

@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "./Login/Login";
 import Signup from "./SignUp";
 import Home from "./Home";
+import './Home.css'
 import './App.css';
 import Navbar from "./Navbar";
 import PlanetDetail from "./PlanetDetail";
