@@ -7,6 +7,7 @@ import './Home.css'
 
 
 
+
 function Home() {
 
     const [planets, setPlanets] = useState([]);
@@ -28,10 +29,9 @@ function Home() {
 
     return (
         <div className='home-background'>
-          
-                <img className='sun' src="https://www.sciencenewsforstudents.org/wp-content/uploads/2020/06/1030_LL_the_sun-1028x579.jpg"/>
-           
-               
+          <div className="sun-image">
+          <img className='sun' src="https://www.sciencenewsforstudents.org/wp-content/uploads/2020/06/1030_LL_the_sun-1028x579.jpg"/>
+          </div>     
         <div className="planet-container">
             {planets.map((planet) => (
                 <PlanetCard 
