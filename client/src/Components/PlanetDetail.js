@@ -38,7 +38,7 @@ function PlanetDetail({ user }) {
   const { name, about, image } = planet
 
   return (
-    <div>
+    <div className='background'>
       <h1>{name}</h1>
       <img src={image} />
       <h3>{about}</h3>
