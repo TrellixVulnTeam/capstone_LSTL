@@ -37,12 +37,16 @@
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
   text-decoration: none;
   border: 2px solid #ff0000;
+  text-decoration: none;
 
   }
 .navbar-title{
 
- justify-content: center;
-  border: 2px solid #ff0d00;
+  text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    margin-top: -2em;
+    margin-right: 600px;
  
 }
 

@@ -12,7 +12,7 @@ function Navbar() {
         
         <Link to="/" style={{textDecoration:"none"}}>
         <div className="navbar-title">
-        <h1>Space</h1>
+        <h1>Solar</h1>
         </div>
         </Link>
         
