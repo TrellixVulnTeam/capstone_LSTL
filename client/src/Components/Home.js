@@ -29,6 +29,7 @@ function Home() {
 
     return (
         <div className='home-background'>
+            
         
           <img className='sun' src="https://www.nasa.gov/images/content/187928main_Fringe081807.jpg"/>
          
