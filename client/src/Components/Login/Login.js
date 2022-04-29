@@ -31,6 +31,14 @@ function Login({ setUser, passwordConfirmation, setPasswordConfirmation }) {
     return (
         <div className="sign-container">
         <div className='signin'>
+        <div class="page-bg"></div>
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
             <div className={formType ? "container" : "container right-panel-active"} id="container">
                 <div className="form2-container">
                     <div className="form-container sign-up-container">
