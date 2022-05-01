@@ -10,9 +10,9 @@ function PlanetDetail({ user }) {
   const { id } = useParams();
   const [memo, setMemo] = useState([])
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  }, [])
+  // }, [])
 
 
 
@@ -20,6 +20,7 @@ function PlanetDetail({ user }) {
   useEffect(() => {
     console.log(id)
     fetch(`/planets/${id}`)
+    //change to each planet ID
       .then((r) => r.json())
       .then((data) => setPlanet(data))
     fetchData()
@@ -29,9 +30,7 @@ function PlanetDetail({ user }) {
     axios.get('/notes')
     .then(r => setMemo(r.data.filter(note => note.planet_id == id) )
 
-    // .then(data => console.log(data))
-    // setMemo(data.data.filter(note => note.planet_id === planet.id)
-
+  
     )}
 
   console.log(id);

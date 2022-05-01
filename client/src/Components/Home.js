@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios'
 import PlanetCard from './PlanetCard';
+import MercuryCard from './Planets/MercuryCard';
+
 
 
 
@@ -11,6 +13,7 @@ import PlanetCard from './PlanetCard';
 function Home() {
 
     const [planets, setPlanets] = useState([]);
+    const [mercury, setMercury] = useState([])
 
 
     useEffect(() => {
@@ -26,6 +29,18 @@ function Home() {
 
     console.log(planets)
 
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetch('/planets/1');
+            const json = await data.json();
+
+            setMercury(json);
+        }
+        fetchData()
+            .catch(console.error)
+    }, [])
+    console.log(mercury)
+
 
     return (
         <div className='home-background'>
@@ -39,8 +54,10 @@ function Home() {
                 key={planet.id}
                 id={planet.id}
                 planet={planet}
-                />
+                />   
             ))}
+           
+        
        
         </div>
         </div>
