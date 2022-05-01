@@ -6,7 +6,7 @@
 
 // function MarsDetail({ user }) {
 
-//   const [earth, setEarth] = useState([])
+//   const [mars, setMars] = useState([])
 //   const { id } = useParams();
 //   const [memo, setMemo] = useState([])
 
