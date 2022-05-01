@@ -75,6 +75,7 @@ function Home() {
              id={venus.id}
              venus={venus}
             /> */}
+
             
             {planets.map((planet) => (
                 <PlanetCard 
