@@ -4,7 +4,7 @@ import MemoForm from './MemoForm';
 import MemoCard from './MemoCard';
 import axios from 'axios';
 
-function PlanetDetail({ user }) {
+function MercuryDetail({ user }) {
 
   const [Mercury, setMercury] = useState([])
   const { id } = useParams();
@@ -39,7 +39,7 @@ function PlanetDetail({ user }) {
   return (
     <div>
       <h1>{name}</h1>
-      <img src={image} class="center"/>
+      <img src={image}/>
       <h3>{about}</h3>
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
@@ -54,4 +54,4 @@ function PlanetDetail({ user }) {
   )
 }
 
-export default PlanetDetail
+export default MercuryDetail
