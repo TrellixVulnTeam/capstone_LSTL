@@ -54,4 +54,4 @@
 //   )
 // }
 
-// export default MarsDetail
+// export default JupiterDetail
