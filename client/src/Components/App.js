@@ -9,7 +9,7 @@ import './App.css';
 import Navbar from "./Navbar";
 import PlanetDetail from "./PlanetDetail";
 
-
+// make route for each planet detail
 
 function App() {
   const [user, setUser] = useState("")
