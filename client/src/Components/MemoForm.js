@@ -12,6 +12,7 @@ function MemoForm({user, planet}) {
             user_id: user.id,
             planet_id: planet.id,
             memo: comment
+            
         })
 
     }

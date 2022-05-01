@@ -10,6 +10,7 @@ import Navbar from "./Navbar";
 import PlanetDetail from "./PlanetDetail";
 
 
+
 function App() {
   const [user, setUser] = useState("")
 
