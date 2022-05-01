@@ -4,9 +4,9 @@
 // import MemoCard from './MemoCard';
 // import axios from 'axios';
 
-// function UranusrDetail({ user }) {
+// function UranusDetail({ user }) {
 
-//   const [jupiter, setJupiter] = useState([])
+//   const [uranus, setUranus] = useState([])
 //   const { id } = useParams();
 //   const [memo, setMemo] = useState([])
 
