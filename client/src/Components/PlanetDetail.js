@@ -57,22 +57,30 @@ function PlanetDetail({ user }) {
       )
   }
 
-  const { name, about, image } = planet
+  const { name, about, info, fact, image, imagetwo, imagethree, imagefour } = planet
 
   console.log(iframeid)
 
 
   return (
     <div>
+      <div className='planet-name'>
+        <h1>{name}</h1>
+      </div>
       <iframe
         src={`https://solarsystem.nasa.gov/gltf_embed/${iframeid}`}
         width='100%'
         height='450px'
         frameborder='0'
       />
-      <h1>{name}</h1>
+     <h3>{about}</h3>
+     <h3>{info}</h3>
+     <h3>{fact}</h3>
       <img src={image} />
-      <h3>{about}</h3>
+      <img src={imagetwo} />
+      <img src={imagethree} />
+      <img src={imagefour} />
+     
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
         return (<MemoCard
