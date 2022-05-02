@@ -75,5 +75,13 @@ body {
   
 }
 
+.planet-name{
+  display: flex;
+    position: relative;
+    right: 20%;
+    position: relative;
+    left: 0%;
+    bottom: 0px;
+}
 
 
