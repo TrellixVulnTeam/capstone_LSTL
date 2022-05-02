@@ -8,8 +8,8 @@ import Home from "./Home";
 import './App.css';
 import Navbar from "./Navbar";
 import PlanetDetail from "./PlanetDetail";
-import MercuryDetail from "./Planets/MercuryDetail";
-import VenusDetail from "./Planets/VenusDetail";
+// import MercuryDetail from "./Planets/MercuryDetail";
+// import VenusDetail from "./Planets/VenusDetail";
 
 // make route for each planet detail
 
@@ -24,7 +24,7 @@ function App() {
         }
       });
   }, [])
-  console.log(user)
+  // console.log(user)
 
   return (
   
@@ -46,13 +46,10 @@ function App() {
               setUser={setUser}
             />
           </Route>
-          <Route exact path="/planets/1">
-            <MercuryDetail user={user} />
+          <Route exact path="/planets/:id">
+            <PlanetDetail user={user} />
           </Route>
-          <Route exact path="/planets/2">
-            <VenusDetail user={user}/>
-          </Route>
-     
+         
       </>
       </Switch>
    
