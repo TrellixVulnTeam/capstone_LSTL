@@ -8,8 +8,7 @@ import Home from "./Home";
 import './App.css';
 import Navbar from "./Navbar";
 import PlanetDetail from "./PlanetDetail";
-// import MercuryDetail from "./Planets/MercuryDetail";
-// import VenusDetail from "./Planets/VenusDetail";
+
 
 // make route for each planet detail
 
@@ -24,7 +23,7 @@ function App() {
         }
       });
   }, [])
-  // console.log(user)
+  console.log(user)
 
   return (
   

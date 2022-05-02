@@ -11,13 +11,6 @@ function PlanetDetail({ user }) {
   const [memo, setMemo] = useState([])
   const [iframeid, setIframeid] = useState("")
 
-  // useEffect(() => {
-
-  // }, [])
-
-
-
-
   useEffect(() => {
     console.log(id)
     fetch(`/planets/${id}`)
