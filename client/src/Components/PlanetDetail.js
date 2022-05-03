@@ -63,9 +63,9 @@ function PlanetDetail({ user }) {
 
 
   return (
-    <div>
+    <div className='detail-background'>
       <div className='planet-name'>
-        <h1>{name}</h1>
+        <h1 className='font-color'>{name}</h1>
       </div>
       <iframe
         src={`https://solarsystem.nasa.gov/gltf_embed/${iframeid}`}
@@ -73,9 +73,9 @@ function PlanetDetail({ user }) {
         height='450px'
         frameborder='0'
       />
-     <h3>{about}</h3>
-     <h3>{info}</h3>
-     <h3>{fact}</h3>
+     <h3 className='font-color'>{about}</h3>
+     <h3 className='font-color'>{info}</h3>
+     <h3 className='font-color'>{fact}</h3>
       <img src={image} />
       <img src={imagetwo} />
       <img src={imagethree} />
