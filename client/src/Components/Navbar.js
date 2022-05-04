@@ -9,7 +9,6 @@ function Navbar() {
         <Link to="/login" style={{textDecoration:"none"}}>
             <span>Login</span>
         </Link>
-        
         <Link to="/" style={{textDecoration:"none"}}>
         <div className="navbar-title">
         <h1>Solar</h1>
