@@ -81,7 +81,7 @@ body {
 
 .planet-name{
 position: relative;
-padding-left: 45%;
+padding-left: 46.5%;
     
 }
 
@@ -90,7 +90,7 @@ padding-left: 45%;
   grid-template-columns: auto auto;
   column-gap: 15px;
   padding-top: 10px;
-  padding-left: 160px;
+  padding-left: 260px;
 }
 
 /* .font-color{
