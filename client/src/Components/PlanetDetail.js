@@ -74,14 +74,20 @@ function PlanetDetail({ user }) {
         frameborder='0'
       />
      <h3 className='font-color'>{about}</h3>
-     <h3 className='font-color'>{info}</h3>
-     <h3 className='font-color'>{fact}</h3>
+   
+   
      <div className="planet-images">
       <img src={image} />
       <img src={imagetwo} />
+      </div>
+      <h3 className='font-color'>{info}</h3>
+      <div className="planet-images">
       <img src={imagethree} />
       <img src={imagefour} />
       </div>
+      <h3 className='font-color'>{fact}</h3>
+
+      
      
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
