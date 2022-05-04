@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_04_26_141738) do
 
   create_table "planets", force: :cascade do |t|
     t.string "name"
-    t.string "about"
+    t.text "about"
     t.text "info"
     t.text "fact"
     t.string "image"
