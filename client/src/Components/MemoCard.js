@@ -31,10 +31,10 @@ function MemoCard({ memo }) {
             <h1>{memo.memo}</h1>
             <form>
                 <input value={newMemo} onChange={handleChange} required></input>
-            <button onClick={handleEdit}>Edit</button>
+            <button class="button-48" role="button" onClick={handleEdit}>Edit</button>
             </form>
             
-            <button onClick={handleDelete}>Delete</button>
+            <button class="button-48" role="button" onClick={handleDelete}>Delete</button>
         </div>
     )
 }
