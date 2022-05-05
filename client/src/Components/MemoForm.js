@@ -31,7 +31,9 @@ function MemoForm({user, planet}) {
                 <label>
                     <input type="text" value={comment} onChange={handleOnChange}></input>
                 </label>
-                <button type="submit">Post</button>
+                <button class="button-48" role="button"><span class="text" type="submit">Post</span></button>
+                {/* <button class="button-52" role="button" type="submit">Post</button> */}
+                {/* <button type="submit">Post</button> */}
             </form>
         </div>
 
