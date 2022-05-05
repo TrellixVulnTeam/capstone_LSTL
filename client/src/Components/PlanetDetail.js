@@ -68,6 +68,7 @@ function PlanetDetail({ user }) {
         <h1>{name}</h1>
       </div>
       <div className="overview">
+      {/* <h1 style={{ color: 'white' }}>Overview</h1> */}
       <h1>Overview</h1>
      <h3 className='font-color'>{about}</h3>
      </div>
@@ -82,6 +83,7 @@ function PlanetDetail({ user }) {
         frameborder='0'
       />
       </div>
+      {/* <h2 style={{ color: 'white' }}>In Depth</h2> */}
       <h2>In Depth</h2>
       <h3 className='font-color'>{info}</h3>
      <div className="planet-images">
@@ -89,6 +91,7 @@ function PlanetDetail({ user }) {
       <img src={imagetwo} />
       </div>
 
+      {/* <h2 style={{ color: 'white' }}>Size - Orbit - Rotation</h2> */}
       <h2>Size - Orbit - Rotation</h2>
       <h3 className='font-color'>{fact}</h3>
       <div className="planet-images">
@@ -98,7 +101,7 @@ function PlanetDetail({ user }) {
      
 
       
-     
+     <div className="note-form">
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
         return (<MemoCard
@@ -107,6 +110,7 @@ function PlanetDetail({ user }) {
 
         />)
       })}
+      </div>
 
     </div>
   )
