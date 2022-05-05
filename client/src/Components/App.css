@@ -50,11 +50,35 @@
     position: relative;
     
 padding-left: 1%;
-   
-    
-    
  
 }
+
+/* .overview{
+  background-color: white;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    bottom: -200px;
+    overflow-wrap: break-word;
+    padding: 10px 10px;
+    right: 25%
+ 
+
+}
+
+.iframe {
+  background-color: white;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  align-items: center;
+  bottom: 100px;
+  overflow-wrap: break-word;
+  padding: 10px 10px;
+  left: 50%
+
+} */
 
 .home-background {
   background-image: url("https://i.imgflip.com/48sq6r.png");
