@@ -202,3 +202,17 @@ body {
   position: relative;
 }
 
+.note-form {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #ffffff;
+  
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border: solid 1px #000000;
+  border-radius: 6px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 15px 60px;
+
+}
