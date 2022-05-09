@@ -102,6 +102,7 @@ function PlanetDetail({ user }) {
 
       
      <div className="note-form">
+       <h2>Notes</h2>
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
         return (<MemoCard
