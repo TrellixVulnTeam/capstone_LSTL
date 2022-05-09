@@ -10,6 +10,7 @@ function PlanetDetail({ user }) {
   const { id } = useParams();
   const [memo, setMemo] = useState([])
   const [iframeid, setIframeid] = useState("")
+  
 
   useEffect(() => {
     console.log(id)
@@ -98,11 +99,13 @@ function PlanetDetail({ user }) {
       <img src={imagethree} />
       <img src={imagefour} />
       </div>
-     
+
+
+ 
 
       
      <div className="note-form">
-       <h2>Notes</h2>
+       <h2>Make Notes here</h2>
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
         return (<MemoCard
