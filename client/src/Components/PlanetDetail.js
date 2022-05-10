@@ -100,12 +100,10 @@ function PlanetDetail({ user }) {
       <img src={imagefour} />
       </div>
 
-
- 
-
-      
+      <div>
+        <h2>Notes</h2>
+      </div>
      <div className="note-form">
-       <h2>Make Notes here</h2>
       <MemoForm user={user} planet={planet} />
       {memo.map((m) => {
         return (<MemoCard
