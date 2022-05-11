@@ -16,5 +16,8 @@
         "node-sass": "^7.0.1",
         "react-bootstrap": "^2.3.1",
         "react-toastify": "^8.2.0"
+    },
+    "devDependencies": {
+        "gh-pages": "^4.0.0"
     }
 }
