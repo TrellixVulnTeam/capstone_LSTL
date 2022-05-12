@@ -15,7 +15,6 @@ function PlanetDetail({ user }) {
   useEffect(() => {
     console.log(id)
     fetch(`/planets/${id}`)
-      //change to each planet ID
       .then((r) => r.json())
       .then((data) => {
         setPlanet(data)
@@ -54,7 +53,6 @@ function PlanetDetail({ user }) {
     axios.get('/notes')
       .then(r => setMemo(r.data.filter(note => note.planet_id == id))
 
-
       )
   }
 
@@ -69,30 +67,23 @@ function PlanetDetail({ user }) {
         <h1>{name}</h1>
       </div>
       <div className="overview">
-      {/* <h1 style={{ color: 'white' }}>Overview</h1> */}
       <h1>Overview</h1>
      <h3 className='font-color'>{about}</h3>
      </div>
      <div className="iframe">
       <iframe
         src={`https://solarsystem.nasa.gov/gltf_embed/${iframeid}`}
-        // width='50%'
-        // height='600px'
         width="100%"
         height="500px"
-
         frameborder='0'
       />
       </div>
-      {/* <h2 style={{ color: 'white' }}>In Depth</h2> */}
       <h2>In Depth</h2>
       <h3 className='font-color'>{info}</h3>
      <div className="planet-images">
       <img src={image} />
       <img src={imagetwo} />
       </div>
-
-      {/* <h2 style={{ color: 'white' }}>Size - Orbit - Rotation</h2> */}
       <h2>Size - Orbit - Rotation</h2>
       <h3 className='font-color'>{fact}</h3>
       <div className="planet-images">
