@@ -70,7 +70,7 @@ function Login({ setUser, passwordConfirmation, setPasswordConfirmation }) {
                             </div>
                             <div className="overlay-panel overlay-right">
                                 <h1 className='form2-welcome'>Welcome</h1>
-                                <p className='form2-subtitle'>Are you ready to explore the unknown?</p>
+                                <p className='form2-subtitle'>Are you ready to explore?</p>
                                 <button onClick={onFormClick} className="form2-button ghost" id="signUp">Sign Up</button>
                             </div>
                         </div>
